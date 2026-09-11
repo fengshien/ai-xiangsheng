@@ -78,6 +78,6 @@ with gr.Blocks(title="AI相声剧本工坊") as demo:
     generate_btn.click(fn=generate_script, inputs=topic_input, outputs=output_text)
 
 # 5. 本地启动（兼容云端端口）
-if __name__ == "__main__":
+    import os
     port = int(os.environ.get("PORT", 7860))
     demo.launch(server_name="0.0.0.0", server_port=port)

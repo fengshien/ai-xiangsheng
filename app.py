@@ -79,5 +79,5 @@ with gr.Blocks(title="AI相声剧本工坊") as demo:
 
 # 5. 本地启动（兼容云端端口）
     import os
-    port = int(os.environ.get("PORT", 7860))
+    port = int(os.environ.get("PORT", 8880))
     demo.launch(server_name="0.0.0.0", server_port=port)

@@ -1,2 +1,2 @@
 gradio
-pyautogen
+pyautogen<0.3
